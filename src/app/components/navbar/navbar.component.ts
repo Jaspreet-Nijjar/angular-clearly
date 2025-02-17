@@ -9,7 +9,7 @@ import { ButtonComponent } from '../../button/button.component';
       <div class="flex items-center gap-4">
         <img src="/logo.png" alt="clearly logo" class="object-fit" />
 
-        <ul class="text-white flex gap-6">
+        <ul class="hidden md:block text-white md:flex gap-6">
           <li>
             <a href="#" class="hover:text-red-300 transition-all">Product</a>
           </li>
