@@ -5,7 +5,7 @@ import { ButtonComponent } from '../../button/button.component';
   selector: 'app-navbar',
   imports: [ButtonComponent],
   template: `
-    <nav class="bg-black p-6">
+    <nav class="bg-black p-6 flex justify-between items-center">
       <div class="flex items-center gap-4">
         <img src="/logo.png" alt="clearly logo" class="object-fit" />
 
