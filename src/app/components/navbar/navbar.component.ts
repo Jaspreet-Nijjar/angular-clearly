@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../../button/button.component';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [ButtonComponent],
   template: `
-    <!-- //Logo -->
     <nav class="bg-black p-6">
       <div class="flex items-center gap-4">
         <img src="/logo.png" alt="clearly logo" class="object-fit" />
@@ -24,6 +24,7 @@ import { Component } from '@angular/core';
           </li>
         </ul>
       </div>
+      <app-button label="Request a Demo"></app-button>
     </nav>
   `,
 })
