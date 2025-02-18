@@ -9,13 +9,20 @@ import { ButtonComponent } from '../../button/button.component';
       <div class="flex items-center gap-4">
         <img src="/logo.png" alt="clearly logo" class="object-fit" />
 
-        <ul class="hidden md:block text-white md:flex gap-6">
+        <ul class="hidden text-white md:flex gap-6">
           <li>
             <a href="#" class="hover:text-red-300 transition-all">Product</a>
           </li>
+
           <li>
-            <a href="#" class="hover:text-red-300 transition-all">About Us</a>
+            <a
+              routerLink="/about"
+              routerLinkActive="text-red-300"
+              class="hover:text-red-300 transition-all"
+              >About Us</a
+            >
           </li>
+
           <li>
             <a href="#" class="hover:text-red-300 transition-all">Blog</a>
           </li>
@@ -24,7 +31,7 @@ import { ButtonComponent } from '../../button/button.component';
           </li>
         </ul>
       </div>
-      <app-button label="Menu"></app-button>
+      <app-button label="Menu" class="md:hidden"></app-button>
     </nav>
   `,
 })
