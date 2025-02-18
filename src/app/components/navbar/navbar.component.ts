@@ -24,7 +24,7 @@ import { ButtonComponent } from '../../button/button.component';
           </li>
         </ul>
       </div>
-      <app-button label="Request a Demo"></app-button>
+      <app-button label="Menu"></app-button>
     </nav>
   `,
 })
