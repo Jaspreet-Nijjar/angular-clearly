@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, RouterModule],
   template: `
     <nav class="bg-black p-6 flex justify-between items-center">
       <div class="flex items-center gap-4">
