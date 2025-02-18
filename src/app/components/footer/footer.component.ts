@@ -35,6 +35,7 @@ import { Component } from '@angular/core';
 
           <div class="flex gap-4">
             <p>Email</p>
+
             <p>Linkedin</p>
           </div>
         </div>
