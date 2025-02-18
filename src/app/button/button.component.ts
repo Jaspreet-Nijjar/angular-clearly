@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
   imports: [],
   template: `
     <button
+      [class]="customClass"
       class="text-gray-800 bg-green-300 font-bold py-2 px-4 rounded-sm hover:bg-green-200 duration-300 ease-in-out cursor-pointer"
     >
       {{ label }}
@@ -13,5 +14,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() label: string = '';
-  @Input() class: string = '';
+  @Input() customClass: string = '';
 }

@@ -8,7 +8,9 @@ import { RouterModule } from '@angular/router';
   template: `
     <nav class="bg-black p-6 flex justify-between items-center">
       <div class="flex items-center gap-4">
-        <img src="/logo.png" alt="clearly logo" class="object-fit" />
+        <a routerLink="/">
+          <img src="/logo.png" alt="clearly logo" class="object-fit" />
+        </a>
 
         <ul class="hidden text-white md:flex gap-6">
           <li>
