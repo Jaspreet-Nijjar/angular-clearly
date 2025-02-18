@@ -30,13 +30,22 @@ import { Component } from '@angular/core';
 
         <div class="flex-col">
           <ul>
-            <li><a href="/" class="underline">Privacy Policy</a></li>
+            <li>
+              <a
+                href="/"
+                class="underline hover:text-red-300 transition-all cursor-pointer"
+                >Privacy Policy</a
+              >
+            </li>
           </ul>
 
-          <div class="flex gap-4">
-            <p>Email</p>
-
-            <p>Linkedin</p>
+          <div class="flex gap-4 mt-4">
+            <i
+              class="fa-regular fa-envelope text-2xl hover:text-red-300 transition-all cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin-in text-2xl hover:text-red-300 transition-all cursor-pointer"
+            ></i>
           </div>
         </div>
       </div>
