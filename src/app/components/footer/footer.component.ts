@@ -1,21 +1,26 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [RouterModule],
   template: `
     <footer class="text-white p-6">
       <div class="grid grid-cols-2">
         <div>
           <ul>
             <li>
-              <a href="/" class="hover:text-red-300 transition-all">Home</a>
+              <a routerLink="/" class="hover:text-red-300 transition-all"
+                >Home</a
+              >
             </li>
             <li>
               <a href="/" class="hover:text-red-300 transition-all">Product</a>
             </li>
             <li>
-              <a href="/" class="hover:text-red-300 transition-all">About us</a>
+              <a routerLink="about" class="hover:text-red-300 transition-all"
+                >About us</a
+              >
             </li>
             <li>
               <a href="/" class="hover:text-red-300 transition-all">Blog</a>
