@@ -35,7 +35,12 @@ import { RouterModule } from '@angular/router';
             >
           </li>
           <li>
-            <a href="#" class="hover:text-red-300 transition-all">Contact Us</a>
+            <a
+              routerLink="/contact"
+              routerLinkActive="text-red-300"
+              class="hover:text-red-300 transition-all"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </div>

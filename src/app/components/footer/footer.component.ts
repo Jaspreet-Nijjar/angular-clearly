@@ -26,7 +26,7 @@ import { RouterModule } from '@angular/router';
               <a href="/" class="hover:text-red-300 transition-all">Blog</a>
             </li>
             <li>
-              <a href="/" class="hover:text-red-300 transition-all"
+              <a routerLink="/contact" class="hover:text-red-300 transition-all"
                 >Contact us</a
               >
             </li>
