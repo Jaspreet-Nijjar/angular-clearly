@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
       </h3>
       <div class="px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div *ngFor="let item of items">
-          <img [src]="item.icon" alt="company icon" class="w-45 mt-4 mb-4" />
+          <img [src]="item.icon" alt="company icon" class="w-32 mt-4 mb-4" />
         </div>
       </div>
     </section>

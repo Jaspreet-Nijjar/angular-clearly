@@ -19,6 +19,12 @@ import { FeatureSectionComponent } from '../../components/feature-section/featur
         label="Awards"
         [items]="awards"
       ></app-feature-section>
+
+      <app-feature-section
+        customClass="bg-zinc-600"
+        label="Standards"
+        [items]="standards"
+      ></app-feature-section>
     </main>
   `,
 })
@@ -40,5 +46,17 @@ export class HomeComponent {
     { icon: 'awards/LOGO_EUSP_WHITE.png' },
     { icon: 'awards/PRODUCTS_AWARD.jpg' },
     { icon: 'awards/MiUK_Awards.png' },
+  ];
+
+  standards = [
+    { icon: '/standards/IC.png' },
+    { icon: '/standards/GHG.png' },
+    { icon: '/standards/ISO.png' },
+    { icon: '/standards/Gold.png' },
+    { icon: '/standards/GRI.png' },
+    { icon: '/standards/VCS.png' },
+    { icon: '/standards/SBTI.png' },
+    { icon: '/standards/smartway.png' },
+    { icon: '/standards/ISO_certified.png' },
   ];
 }
