@@ -8,7 +8,10 @@ import { FeatureSectionComponent } from '../../components/feature-section/featur
   template: `
     <main>
       <app-hero></app-hero>
-      <app-feature-section customClass="bg-red-500"></app-feature-section>
+      <app-feature-section
+        customClass="bg-zinc-400"
+        label="Investors & Partners"
+      ></app-feature-section>
     </main>
   `,
 })
