@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from '../../components/hero/hero.component';
 import { FeatureSectionComponent } from '../../components/feature-section/feature-section.component';
+import { CustomersComponent } from '../../components/customers/customers.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, FeatureSectionComponent],
+  imports: [HeroComponent, FeatureSectionComponent, CustomersComponent],
   template: `
     <main>
       <app-hero></app-hero>
+      <app-customers></app-customers>
+
       <app-feature-section
         customClass="bg-zinc-400"
         label="Investors & Partners"
