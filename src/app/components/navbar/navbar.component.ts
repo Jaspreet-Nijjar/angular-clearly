@@ -20,7 +20,12 @@ import { CommonModule } from '@angular/common';
 
         <ul class="hidden text-white md:flex gap-6">
           <li>
-            <a href="#" class="hover:text-red-300 transition-all">Product</a>
+            <a
+              routerLink="/products"
+              routerLinkActive="text-red-300"
+              class="hover:text-red-300 transition-all"
+              >Product</a
+            >
           </li>
 
           <li>

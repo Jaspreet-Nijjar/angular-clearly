@@ -8,17 +8,21 @@ import { CommonModule } from '@angular/common';
   template: `
     <section>
       <app-product-item
-        *ngFor="let item of items"
+        *ngFor="let item of items; let i = index"
+        (click)="toggleAccordion(i)"
         [number]="item.number"
         [title]="item.title"
         [description]="item.description"
         [image]="item.image"
+        [isExpanded]="expandedIndex === i"
       >
       </app-product-item>
     </section>
   `,
 })
 export class ProductsComponent {
+  expandedIndex: number = 0;
+
   items = [
     {
       number: 1,
@@ -36,11 +40,23 @@ export class ProductsComponent {
       Optimise daily operations and address inefficiencies across your supply chain (idling, driver behaviour, and load management, etc).<br><br>
 Upgrade and retrofit existing vehicles in your fleet to extend their useful lifetime whilst increasing fuel efficiency and reducing running costs.<br><br>
 Take small, targeted actions that deliver a big impact.
+`,
+      image: '/optimise.png',
+    },
 
-
-
+    {
+      number: 3,
+      title: 'Transition',
+      description: `Know when, where, and how to transition your fleet.<br><br>
+      Make smarter decisions by comparing all options, from plug-in hybrids to full electrification.<br><br>
+Gain a clear understanding of your total cost of ownership, grid capacity in your area and available incentives such as carbon credits, grants, and tax rebates.<br><br>
+Confidently choose the path to net zero that maximises ROI and minimises risk.
 `,
       image: '/optimise.png',
     },
   ];
+
+  toggleAccordion(index: number) {
+    this.expandedIndex = this.expandedIndex === index ? -1 : index;
+  }
 }
