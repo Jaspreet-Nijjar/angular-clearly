@@ -2,13 +2,20 @@ import { Component } from '@angular/core';
 import { HeroComponent } from '../../components/hero/hero.component';
 import { FeatureSectionComponent } from '../../components/feature-section/feature-section.component';
 import { CustomersComponent } from '../../components/customers/customers.component';
+import { DecarbonisationStandardsComponentComponent } from '../../components/decarbonisation-standards-component/decarbonisation-standards-component.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, FeatureSectionComponent, CustomersComponent],
+  imports: [
+    HeroComponent,
+    FeatureSectionComponent,
+    CustomersComponent,
+    DecarbonisationStandardsComponentComponent,
+  ],
   template: `
     <main>
       <app-hero></app-hero>
+      <app-decarbonisation-standards-component></app-decarbonisation-standards-component>
       <app-customers></app-customers>
 
       <app-feature-section
