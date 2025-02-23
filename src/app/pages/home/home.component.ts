@@ -3,6 +3,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
 import { FeatureSectionComponent } from '../../components/feature-section/feature-section.component';
 import { CustomersComponent } from '../../components/customers/customers.component';
 import { DecarbonisationStandardsComponentComponent } from '../../components/decarbonisation-standards-component/decarbonisation-standards-component.component';
+import { ServicesComponent } from '../../components/services/services.component';
 
 @Component({
   selector: 'app-home',
@@ -11,10 +12,12 @@ import { DecarbonisationStandardsComponentComponent } from '../../components/dec
     FeatureSectionComponent,
     CustomersComponent,
     DecarbonisationStandardsComponentComponent,
+    ServicesComponent,
   ],
   template: `
     <main>
       <app-hero></app-hero>
+      <app-services></app-services>
       <app-decarbonisation-standards-component></app-decarbonisation-standards-component>
       <app-customers></app-customers>
 
