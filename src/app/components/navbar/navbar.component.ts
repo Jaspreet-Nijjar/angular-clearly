@@ -61,7 +61,7 @@ import { CommonModule } from '@angular/common';
     <!-- Mobile Navbar -->
     <div
       *ngIf="isMenuOpen"
-      class="bg-black text-white p-6 absolute top-24 left-0 w-full h-full md:hidden"
+      class="bg-black text-white p-6 fixed top-24 left-0 w-full h-screen md:hidden"
     >
       <ul class=" text-white font-bold text-xl flex flex-col gap-6">
         <li>
