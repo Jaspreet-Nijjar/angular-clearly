@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
-  imports: [ButtonComponent, RouterModule],
+  imports: [ButtonComponent, RouterModule, CommonModule],
   template: `
     <nav class="bg-black p-6 flex justify-between items-center">
       <div class="flex items-center gap-4">
@@ -45,12 +46,18 @@ import { RouterModule } from '@angular/router';
         </ul>
       </div>
 
-      <app-button label="Menu" class="md:hidden"></app-button>
+      <app-button
+        (click)="toggleMenu()"
+        [label]="isMenuOpen ? 'Close' : 'Menu'"
+        class="md:hidden"
+      ></app-button>
     </nav>
 
     <!-- Mobile Navbar -->
-
-    <div class="p-6">
+    <div
+      *ngIf="isMenuOpen"
+      class="bg-black text-white p-6 absolute top-24 left-0 w-full"
+    >
       <ul class=" text-white font-bold text-xl flex flex-col gap-6">
         <li>
           <a href="#" class="hover:text-red-300 transition-all">Product</a>
@@ -88,4 +95,10 @@ import { RouterModule } from '@angular/router';
     </div>
   `,
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  isMenuOpen = false;
+
+  toggleMenu = () => {
+    this.isMenuOpen = !this.isMenuOpen;
+  };
+}
