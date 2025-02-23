@@ -13,6 +13,12 @@ import { FeatureSectionComponent } from '../../components/feature-section/featur
         label="Investors & Partners"
         [items]="investors"
       ></app-feature-section>
+
+      <app-feature-section
+        customClass="bg-zinc-500"
+        label="Awards"
+        [items]="awards"
+      ></app-feature-section>
     </main>
   `,
 })
@@ -24,5 +30,15 @@ export class HomeComponent {
     { icon: '/investors/NextGear-WHITE.png' },
     { icon: '/investors/nine_realms-greyscale.png' },
     { icon: '/investors/m1720-greyscale.png' },
+  ];
+
+  awards = [
+    { icon: 'awards/europas_2022.png' },
+    { icon: 'awards/QueenOfGreen_white_250px.png' },
+    { icon: 'awards/UKRI.png' },
+    { icon: 'awards/UKIL@2x.png' },
+    { icon: 'awards/LOGO_EUSP_WHITE.png' },
+    { icon: 'awards/PRODUCTS_AWARD.jpg' },
+    { icon: 'awards/MiUK_Awards.png' },
   ];
 }
