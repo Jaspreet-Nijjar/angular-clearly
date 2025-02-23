@@ -10,7 +10,12 @@ import { CommonModule } from '@angular/common';
     <nav class="bg-black p-6 flex justify-between items-center">
       <div class="flex items-center gap-4">
         <a routerLink="/">
-          <img src="/logo.png" alt="clearly logo" class="object-fit" />
+          <img
+            src="/logo.png"
+            alt="clearly logo"
+            class="object-fit"
+            (click)="toggleMenu()"
+          />
         </a>
 
         <ul class="hidden text-white md:flex gap-6">
@@ -60,11 +65,17 @@ import { CommonModule } from '@angular/common';
     >
       <ul class=" text-white font-bold text-xl flex flex-col gap-6">
         <li>
-          <a href="#" class="hover:text-red-300 transition-all">Product</a>
+          <a
+            (click)="toggleMenu()"
+            href="#"
+            class="hover:text-red-300 transition-all"
+            >Product</a
+          >
         </li>
 
         <li>
           <a
+            (click)="toggleMenu()"
             routerLink="/about"
             routerLinkActive="text-red-300"
             class="hover:text-red-300 transition-all"
@@ -74,6 +85,7 @@ import { CommonModule } from '@angular/common';
 
         <li>
           <a
+            (click)="toggleMenu()"
             routerLink="/blog"
             routerLinkActive="text-red-300"
             class="hover:text-red-300 transition-all"
@@ -82,6 +94,7 @@ import { CommonModule } from '@angular/common';
         </li>
         <li>
           <a
+            (click)="toggleMenu()"
             routerLink="/contact"
             routerLinkActive="text-red-300"
             class="hover:text-red-300 transition-all"
@@ -90,7 +103,11 @@ import { CommonModule } from '@angular/common';
         </li>
       </ul>
       <a routerLink="/contact">
-        <app-button label="Request a Demo" customClass="mt-24"></app-button>
+        <app-button
+          (click)="toggleMenu()"
+          label="Request a Demo"
+          customClass="mt-24"
+        ></app-button>
       </a>
     </div>
   `,
