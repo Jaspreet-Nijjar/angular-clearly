@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ProductCardComponent } from '../product-card/product-card.component';
 import { ButtonComponent } from '../../button/button.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-services',
-  imports: [ProductCardComponent, ButtonComponent],
+  imports: [ProductCardComponent, ButtonComponent, RouterModule],
   template: `
     <section class="text-white p-6 grid grid-cols-1 md:grid-cols-2">
       <div>
@@ -83,10 +84,13 @@ import { ButtonComponent } from '../../button/button.component';
           Sensors and statements for the current usage and future demand of
           energy supplies...
         </p>
-        <app-button
-          label="Request a demo"
-          customClass="w-full text-left mt-10 md:w-fit"
-        ></app-button>
+
+        <a routerLink="/contact">
+          <app-button
+            label="Request a demo"
+            customClass="w-full text-left mt-10 md:w-fit"
+          ></app-button>
+        </a>
       </div>
 
       <img src="/services.png" alt="services" class="lg:h-[500px]" />

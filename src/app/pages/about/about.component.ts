@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, RouterModule],
   template: `
     <section class="text-white p-4">
       <div class="md:grid md:grid-cols-2 px-4">
@@ -53,8 +54,9 @@ import { ButtonComponent } from '../../button/button.component';
               >Read GLEC Framework</a
             >
           </div>
-
-          <app-button label="Request a demo" customClass="mt-4"></app-button>
+          <a routerLink="/contact">
+            <app-button label="Request a demo" customClass="mt-4"></app-button
+          ></a>
         </div>
 
         <div>

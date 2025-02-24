@@ -67,7 +67,7 @@ import { RouterModule } from '@angular/router';
           <a routerLink="/contact">
             <app-button
               label="Request a demo"
-              customClass="w-full text-left md:w-fit"
+              customClass="w-full text-left mt-6 md:w-fit"
             ></app-button>
           </a>
         </div>
