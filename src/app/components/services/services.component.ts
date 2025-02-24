@@ -89,7 +89,7 @@ import { ButtonComponent } from '../../button/button.component';
         ></app-button>
       </div>
 
-      <img src="/services.png" alt="services" />
+      <img src="/services.png" alt="services" class="lg:h-[500px]" />
     </div>
 
     <div class="text-white flex flex-col p-6 md:flex-row md:gap-50 md:text-lg">
@@ -107,7 +107,7 @@ import { ButtonComponent } from '../../button/button.component';
         <p class="mt-2 mb-2">But wait there’s more to it...</p>
       </div>
 
-      <img src="/data-fusion.png" alt="data fusion" />
+      <img src="/data-fusion.png" alt="data fusion" class="lg:h-[500px]" />
     </div>
   `,
 })

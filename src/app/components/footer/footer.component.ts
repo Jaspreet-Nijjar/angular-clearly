@@ -15,7 +15,11 @@ import { RouterModule } from '@angular/router';
               >
             </li>
             <li>
-              <a href="/" class="hover:text-red-300 transition-all">Product</a>
+              <a
+                routerLink="/products"
+                class="hover:text-red-300 transition-all"
+                >Product</a
+              >
             </li>
             <li>
               <a routerLink="about" class="hover:text-red-300 transition-all"
@@ -23,7 +27,9 @@ import { RouterModule } from '@angular/router';
               >
             </li>
             <li>
-              <a href="/" class="hover:text-red-300 transition-all">Blog</a>
+              <a routerLink="/blog" class="hover:text-red-300 transition-all"
+                >Blog</a
+              >
             </li>
             <li>
               <a routerLink="/contact" class="hover:text-red-300 transition-all"
