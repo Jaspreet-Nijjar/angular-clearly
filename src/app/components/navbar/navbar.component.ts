@@ -66,8 +66,25 @@ import { CommonModule } from '@angular/common';
     <!-- Mobile Navbar -->
     <div
       *ngIf="isMenuOpen"
-      class="bg-black text-white p-6 fixed top-24 left-0 w-full h-screen md:hidden"
+      class="bg-black text-white p-6 fixed top-0 left-0 w-full h-screen md:hidden"
     >
+      <div class="flex justify-between items-center mb-4">
+        <a routerLink="/">
+          <img
+            src="/logo.png"
+            alt="clearly logo"
+            class="object-fit"
+            (click)="toggleMenu()"
+          />
+        </a>
+
+        <app-button
+          (click)="toggleMenu()"
+          [label]="isMenuOpen ? 'Close' : 'Menu'"
+          class="md:hidden"
+        ></app-button>
+      </div>
+
       <ul class=" text-white font-bold text-xl flex flex-col gap-6">
         <li>
           <a
