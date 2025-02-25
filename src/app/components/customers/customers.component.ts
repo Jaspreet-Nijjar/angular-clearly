@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
       </h2>
 
       <div class="md:flex md:gap-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:gap-12">
           <div class="md:w-96">
             <img
               src="/customers/customer-1.jpeg"
@@ -39,7 +39,7 @@ import { RouterModule } from '@angular/router';
             <div class="border-white border-b"></div>
           </div>
 
-          <div class="mt-10 md:w-96">
+          <div class="md:w-96">
             <img
               src="/customers/customer-3.jpg"
               alt="customer"
@@ -58,7 +58,7 @@ import { RouterModule } from '@angular/router';
               alt="customer"
               class="w-full h-60 object-cover object-center mt-10"
             />
-            <p class="font-light">
+            <p class="font-light mb-4">
               Make smarter vehicle choices by comparing electrification,
               hybrids, and ICE to maximise ROI and minimise risk
             </p>
@@ -72,7 +72,7 @@ import { RouterModule } from '@angular/router';
           </a>
         </div>
 
-        <div class="hidden md:block bg-black">
+        <div class="hidden xl:block bg-black max-w-96">
           <img src="/customers/Back-of-tollbooth.svg" alt="back of tollbooth" />
           <img
             src="/customers/Van_with_tick.png"
