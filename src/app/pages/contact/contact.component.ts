@@ -6,8 +6,8 @@ import { ButtonComponent } from '../../button/button.component';
   imports: [ButtonComponent],
   template: `
     <h1 class="text-4xl font-bold text-white p-6">Contact us</h1>
-    <section class="p-6 flex flex-col text-white md:flex-row md:gap-4">
-      <form class="flex flex-col md:flex-row md:gap-54 lg:gap-60">
+    <section class="p-6 flex flex-col text-white md:flex-row">
+      <form class="flex flex-col items-center md:flex-row md:gap-12 lg:gap-16">
         <div class="flex flex-col space-y-6">
           <div>
             <label
@@ -15,7 +15,7 @@ import { ButtonComponent } from '../../button/button.component';
             >
 
             <select
-              class="text-white bg-black border mb-2 border-white px-4 py-2 rounded block w-[300px] lg:w-[500px]"
+              class="text-white bg-black border mb-2 border-white px-4 py-2 rounded block w-[300px] lg:w-[400px]"
             >
               <option value="" disabled selected>
                 Select from dropdown items
@@ -47,7 +47,7 @@ import { ButtonComponent } from '../../button/button.component';
             <input
               type="text"
               placeholder="Type..."
-              class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[500px]"
+              class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
             />
           </div>
 
@@ -56,38 +56,38 @@ import { ButtonComponent } from '../../button/button.component';
             <textarea
               rows="5"
               placeholder="Type..."
-              class="block text-white bg-black border border-white px-4 py-2 mb-2 rounded w-[300px] lg:w-[500px]"
+              class="block text-white bg-black border border-white px-4 py-2 mb-2 rounded w-[300px] lg:w-[400px]"
             ></textarea>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2 space-y-4">
+        <div class="flex flex-col">
           <label>First name<span class="text-red-500">*</span></label>
           <input
             type="text"
             placeholder="Type..."
-            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[500px]"
+            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
           />
 
           <label>Last name<span class="text-red-500">*</span></label>
           <input
             type="text"
             placeholder="Type..."
-            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[500px]"
+            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
           />
 
           <label>Email<span class="text-red-500">*</span></label>
           <input
             type="email"
             placeholder="Type..."
-            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[500px]"
+            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
           />
 
           <label>Company<span class="text-red-500">*</span></label>
           <input
             type="text"
             placeholder="Type..."
-            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[500px]"
+            class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
           />
           <app-button
             label="Submit"

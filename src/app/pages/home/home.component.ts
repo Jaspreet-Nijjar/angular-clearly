@@ -15,7 +15,7 @@ import { ServicesComponent } from '../../components/services/services.component'
     ServicesComponent,
   ],
   template: `
-    <main>
+    <main class="overflow-hidden">
       <app-hero></app-hero>
       <app-services></app-services>
       <app-decarbonisation-standards-component></app-decarbonisation-standards-component>
