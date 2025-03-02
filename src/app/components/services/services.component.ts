@@ -93,7 +93,11 @@ import { RouterModule } from '@angular/router';
         </a>
       </div>
 
-      <img src="/services.png" alt="services" class="lg:h-[500px]" />
+      <img
+        src="/services.png"
+        alt="services"
+        class="md:h-[300px] lg:h-[500px]"
+      />
     </div>
 
     <div class="text-white flex flex-col p-6 md:flex-row md:gap-50 md:text-lg">
@@ -111,7 +115,11 @@ import { RouterModule } from '@angular/router';
         <p class="mt-2 mb-2">But wait there’s more to it...</p>
       </div>
 
-      <img src="/data-fusion.png" alt="data fusion" class="lg:h-[500px]" />
+      <img
+        src="/data-fusion.png"
+        alt="data fusion"
+        class="md:h-[300px] lg:h-[500px]"
+      />
     </div>
   `,
 })
