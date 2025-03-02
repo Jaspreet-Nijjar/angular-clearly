@@ -7,8 +7,8 @@ import { ButtonComponent } from '../../button/button.component';
   template: `
     <h1 class="text-4xl font-bold text-white p-6">Contact us</h1>
     <section class="p-6 flex flex-col text-white md:flex-row">
-      <form class="flex flex-col items-center md:flex-row md:gap-12 lg:gap-16">
-        <div class="flex flex-col space-y-6">
+      <form class="flex flex-col md:flex-row md:gap-12 lg:gap-16">
+        <div class="flex flex-col">
           <div>
             <label
               >Select your interest <span class="text-red-500">*</span></label
