@@ -94,7 +94,7 @@ import { ButtonComponent } from '../../button/button.component';
           />
           <app-button
             label="Submit"
-            customClass="bg-red-400 text-white w-full hover:bg-red-300 transition-all"
+            customClass="bg-red-400 text-white w-full mt-6 hover:bg-red-300 transition-all"
           ></app-button>
         </div>
       </form>
