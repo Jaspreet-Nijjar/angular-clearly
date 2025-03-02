@@ -5,11 +5,11 @@ import { ButtonComponent } from '../../button/button.component';
   selector: 'app-contact',
   imports: [ButtonComponent],
   template: `
-    <h1 class="text-4xl font-bold">Contact us</h1>
+    <h1 class="text-4xl font-bold text-white">Contact us</h1>
     <section class="p-6 flex flex-col text-white md:flex-row md:gap-4">
       <form class="flex flex-col md:flex-row md:gap-54">
         <div class="flex flex-col space-y-6">
-          <div>
+          <div class="mb-2">
             <label
               >Select your interest <span class="text-red-500">*</span></label
             >
