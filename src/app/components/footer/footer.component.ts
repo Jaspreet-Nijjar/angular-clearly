@@ -72,14 +72,7 @@ import { RouterModule } from '@angular/router';
           </p>
         </div>
 
-        <span
-          >Website:
-          <a
-            class="text-zinc-500 underline"
-            href="https://togethercreative.co.uk/"
-            >Together</a
-          ></span
-        >
+        <span>Website</span>
       </div>
     </footer>
   `,
