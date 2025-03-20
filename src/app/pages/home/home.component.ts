@@ -14,32 +14,7 @@ import { ServicesComponent } from '../../components/services/services.component'
     DecarbonisationStandardsComponentComponent,
     ServicesComponent,
   ],
-  template: `
-    <main class="overflow-hidden">
-      <app-hero></app-hero>
-      <app-services></app-services>
-      <app-decarbonisation-standards-component></app-decarbonisation-standards-component>
-      <app-customers></app-customers>
-
-      <app-feature-section
-        customClass="bg-zinc-400"
-        label="Investors & Partners"
-        [items]="investors"
-      ></app-feature-section>
-
-      <app-feature-section
-        customClass="bg-zinc-500"
-        label="Awards"
-        [items]="awards"
-      ></app-feature-section>
-
-      <app-feature-section
-        customClass="bg-zinc-600"
-        label="Standards"
-        [items]="standards"
-      ></app-feature-section>
-    </main>
-  `,
+  templateUrl: './home.component.html',
 })
 export class HomeComponent {
   investors = [

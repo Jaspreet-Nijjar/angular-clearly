@@ -5,26 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-blog',
   imports: [BlogCardComponent, CommonModule],
-  template: `<section class="flex flex-col">
-    <h1 class="text-white text-4xl font-bold py-6 pb-8 text-center">
-      Clearly Blog
-    </h1>
-
-    <div
-      class="mx-auto flex flex-col gap-16 md:flex-row md:justify-center pb-6"
-    >
-      <app-blog-card
-        *ngFor="let post of blogPosts"
-        [image]="post.image"
-        [label]="post.label"
-        [date]="post.date"
-        [title]="post.title"
-        [description]="post.description"
-      >
-      </app-blog-card>
-    </div>
-    <div class="border border-zinc-700 border-b"></div>
-  </section>`,
+  templateUrl: './blog.component.html',
 })
 export class BlogComponent {
   blogPosts = [

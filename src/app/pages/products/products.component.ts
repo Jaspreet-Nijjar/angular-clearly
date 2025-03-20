@@ -5,20 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-products',
   imports: [ProductItemComponent, CommonModule],
-  template: `
-    <section>
-      <app-product-item
-        *ngFor="let item of items; let i = index"
-        (click)="toggleAccordion(i)"
-        [number]="item.number"
-        [title]="item.title"
-        [description]="item.description"
-        [image]="item.image"
-        [isExpanded]="expandedIndex === i"
-      >
-      </app-product-item>
-    </section>
-  `,
+  templateUrl: './products.component.html',
 })
 export class ProductsComponent {
   expandedIndex: number = 0;
