@@ -2,29 +2,15 @@
   <div class="grid grid-cols-2">
     <div>
       <ul>
+        @for(link of footerLinks; track $index) {
         <li>
-          <a routerLink="/" class="hover:text-red-300 transition-all">Home</a>
-        </li>
-        <li>
-          <a routerLink="/products" class="hover:text-red-300 transition-all"
-            >Product</a
+          <a
+            class="hover:text-red-300 transition-all"
+            [routerLink]="link.route"
+            >{{ link.label }}</a
           >
         </li>
-        <li>
-          <a routerLink="about" class="hover:text-red-300 transition-all"
-            >About us</a
-          >
-        </li>
-        <li>
-          <a routerLink="/blog" class="hover:text-red-300 transition-all"
-            >Blog</a
-          >
-        </li>
-        <li>
-          <a routerLink="/contact" class="hover:text-red-300 transition-all"
-            >Contact us</a
-          >
-        </li>
+        }
       </ul>
     </div>
 
@@ -40,12 +26,9 @@
       </ul>
 
       <div class="flex gap-4 mt-4">
-        <i
-          class="fa-regular fa-envelope text-2xl hover:text-red-300 transition-all cursor-pointer"
-        ></i>
-        <i
-          class="fa-brands fa-linkedin-in text-2xl hover:text-red-300 transition-all cursor-pointer"
-        ></i>
+        @for(icon of footerIcons; track $index) {
+        <i [class]="icon"></i>
+        }
       </div>
     </div>
   </div>

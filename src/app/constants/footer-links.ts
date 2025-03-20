@@ -20,3 +20,8 @@ export const FOOTER_LINKS = [
     route: '/contact',
   },
 ];
+
+export const FOOTER_ICONS = [
+  'fa-regular fa-envelope text-2xl hover:text-red-300 transition-all cursor-pointer',
+  'fa-brands fa-linkedin-in text-2xl hover:text-red-300 transition-all cursor-pointer',
+];
