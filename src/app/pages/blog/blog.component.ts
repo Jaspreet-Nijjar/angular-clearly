@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { BlogCardComponent } from '../../components/blog-card/blog-card.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-blog',
-  imports: [BlogCardComponent, CommonModule],
+  imports: [BlogCardComponent],
   templateUrl: './blog.component.html',
 })
 export class BlogComponent {
