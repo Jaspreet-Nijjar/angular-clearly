@@ -10,40 +10,16 @@
     </a>
 
     <ul class="hidden text-white md:flex gap-6">
+      @for(navLink of navLinks; track $index) {
       <li>
         <a
-          routerLink="/products"
+          routerLink="{{ navLink.url }}"
           routerLinkActive="text-red-300"
           class="hover:text-red-300 transition-all"
-          >Product</a
+          >{{ navLink.label }}</a
         >
       </li>
-
-      <li>
-        <a
-          routerLink="/about"
-          routerLinkActive="text-red-300"
-          class="hover:text-red-300 transition-all"
-          >About Us</a
-        >
-      </li>
-
-      <li>
-        <a
-          routerLink="/blog"
-          routerLinkActive="text-red-300"
-          class="hover:text-red-300 transition-all"
-          >Blog</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="/contact"
-          routerLinkActive="text-red-300"
-          class="hover:text-red-300 transition-all"
-          >Contact Us</a
-        >
-      </li>
+      }
     </ul>
   </div>
 
@@ -77,43 +53,17 @@
   </div>
 
   <ul class="text-white font-bold text-xl flex flex-col gap-6">
+    @for(navLink of navLinks; track $index) {
     <li>
       <a
         (click)="toggleMenu()"
-        href="#"
-        class="hover:text-red-300 transition-all"
-        >Product</a
-      >
-    </li>
-
-    <li>
-      <a
-        (click)="toggleMenu()"
-        routerLink="/about"
+        routerLink="{{ navLink.url }}"
         routerLinkActive="text-red-300"
         class="hover:text-red-300 transition-all"
-        >About Us</a
+        >{{ navLink.label }}</a
       >
     </li>
-
-    <li>
-      <a
-        (click)="toggleMenu()"
-        routerLink="/blog"
-        routerLinkActive="text-red-300"
-        class="hover:text-red-300 transition-all"
-        >Blog</a
-      >
-    </li>
-    <li>
-      <a
-        (click)="toggleMenu()"
-        routerLink="/contact"
-        routerLinkActive="text-red-300"
-        class="hover:text-red-300 transition-all"
-        >Contact Us</a
-      >
-    </li>
+    }
   </ul>
   <a routerLink="/contact">
     <app-button
