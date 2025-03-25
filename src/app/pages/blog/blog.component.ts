@@ -3,7 +3,7 @@ import { BlogCardComponent } from '../../components/blog-card/blog-card.componen
 
 @Component({
   selector: 'app-blog',
-  imports: [BlogCardComponent],
+  // imports: [BlogCardComponent],
   templateUrl: './blog.component.html',
 })
 export class BlogComponent {
