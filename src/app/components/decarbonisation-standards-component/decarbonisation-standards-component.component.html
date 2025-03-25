@@ -4,18 +4,9 @@
       Decarbonisation Aligned with Global Standards
     </h1>
 
-    <p class="font-light mt-2 mb-2">
-      Powered by proprietary technology, Clearly's platform ensures that
-      emissions data and reduction insights align with leading global standards
-      (GLEC, GHG Protocol, ISO 14083 and more).
-    </p>
-    <p class="font-light mt-2 mb-2">
-      Seamlessly export your data and provide all your stakeholders with
-      trusted, compliant reports in no time.
-    </p>
-    <p class="font-light mt-2 mb-2">
-      Reduce emissions and costs while remaining compliant.
-    </p>
+    @for(text of text; track $index) {
+    <p class="font-light mt-2 mb-2">{{ text.description }}</p>
+    }
 
     <a routerLink="/about" class="underline text-red-400 font-semibold"
       >Read more about Clearly</a
