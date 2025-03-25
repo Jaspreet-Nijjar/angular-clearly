@@ -1,6 +1,7 @@
 <h1 class="text-4xl font-bold text-white p-6">Contact us</h1>
 <section class="p-6 flex flex-col text-white md:flex-row">
   <form
+    [formGroup]="contactForm"
     class="flex flex-col md:flex-row md:gap-12 lg:gap-32 py-6 w-full border-zinc-700 border-b"
   >
     <div class="flex flex-col">
@@ -9,6 +10,7 @@
 
         <select
           class="text-white bg-black border mb-2 border-white px-4 py-2 rounded block w-[300px] lg:w-[400px]"
+          formControlName="dropdown"
         >
           <option value="" disabled selected>Select from dropdown items</option>
 
@@ -34,12 +36,27 @@
       </div>
 
       <div>
+        @if(contactForm.get('dropdown')?.touched &&
+        contactForm.get('dropdown')?.invalid) {
+        <p class="text-red-400">Please select an option</p>
+        }
+      </div>
+
+      <div>
         <label>Subject of query<span class="text-red-500">*</span></label>
         <input
           type="text"
           placeholder="Type..."
           class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
+          formControlName="query"
         />
+      </div>
+
+      <div>
+        @if(contactForm.get('query')?.touched &&
+        contactForm.get('query')?.invalid) {
+        <p class="text-red-400">Please enter a query</p>
+        }
       </div>
 
       <div>
@@ -48,7 +65,14 @@
           rows="5"
           placeholder="Type..."
           class="block text-white bg-black border border-white px-4 py-2 mb-2 rounded w-[300px] lg:w-[400px]"
+          formControlName="message"
         ></textarea>
+      </div>
+      <div>
+        @if(contactForm.get('message')?.touched &&
+        contactForm.get('message')?.invalid) {
+        <p class="text-red-400">Please enter a message</p>
+        }
       </div>
     </div>
 
@@ -58,32 +82,66 @@
         type="text"
         placeholder="Type..."
         class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
+        formControlName="firstName"
       />
+      <div>
+        @if(contactForm.get('firstName')?.touched &&
+        contactForm.get('firstName')?.invalid) {
+        <p class="text-red-400">Please enter your first name</p>
+        }
+      </div>
 
       <label>Last name<span class="text-red-500">*</span></label>
       <input
         type="text"
         placeholder="Type..."
         class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
+        formControlName="lastName"
       />
+      <div>
+        @if(contactForm.get('lastName')?.touched &&
+        contactForm.get('lastName')?.invalid) {
+        <p class="text-red-400">Please enter your last name</p>
+        }
+      </div>
 
       <label>Email<span class="text-red-500">*</span></label>
       <input
         type="email"
         placeholder="Type..."
         class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
+        formControlName="email"
       />
+
+      <div>
+        @if(contactForm.get('email')?.touched &&
+        contactForm.get('email')?.invalid) {
+        <p class="text-red-400">Please enter a valid email</p>
+        }
+      </div>
 
       <label>Company<span class="text-red-500">*</span></label>
       <input
         type="text"
         placeholder="Type..."
         class="block text-white bg-black border border-white mb-2 px-4 py-2 rounded w-[300px] lg:w-[400px]"
+        formControlName="company"
       />
-      <app-button
-        label="Submit"
-        customClass="bg-red-400 text-white w-fit mt-6 hover:bg-red-300 transition-all"
-      ></app-button>
+
+      <div>
+        @if(contactForm.get('company')?.touched &&
+        contactForm.get('company')?.invalid) {
+        <p class="text-red-400">Please enter a company</p>
+        }
+      </div>
+
+      <button
+        class="bg-red-400 text-white w-fit mt-6 hover:bg-red-300 transition-all p-2 px-4 rounded-lg cursor-pointer"
+        type="submit"
+        [disabled]="contactForm.invalid"
+      >
+        Submit
+      </button>
     </div>
   </form>
 </section>
