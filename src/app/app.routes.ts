@@ -4,11 +4,18 @@ import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { RootLayoutComponent } from './layouts/root-layout/root-layout.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'products', component: ProductsComponent },
+  {
+    path: '',
+    component: RootLayoutComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'blog', component: BlogComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'products', component: ProductsComponent },
+    ],
+  },
 ];
