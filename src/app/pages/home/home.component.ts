@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from '../../components/hero/hero.component';
-import { FeatureSectionComponent } from '../../components/feature-section/feature-section.component';
-import { CustomersComponent } from '../../components/customers/customers.component';
-import { DecarbonisationStandardsComponentComponent } from '../../components/decarbonisation-standards-component/decarbonisation-standards-component.component';
-import { ServicesComponent } from '../../components/services/services.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { FeatureSectionComponent } from './components/feature-section/feature-section.component';
+import { CustomersComponent } from './components/customers/customers.component';
+import { DecarbonisationStandardsComponentComponent } from './components/decarbonisation-standards-component/decarbonisation-standards-component.component';
+import { ServicesComponent } from './components/services/services.component';
 
 @Component({
   selector: 'app-home',

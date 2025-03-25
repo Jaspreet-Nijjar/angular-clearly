@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../../shared/button/button.component';
+import { ButtonComponent } from '../../../../shared/button/button.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 

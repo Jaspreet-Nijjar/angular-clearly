@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DECARBONISATION_STANDARDS_TEXT } from '../../constants/decarbonisation-standards-text';
+import { DECARBONISATION_STANDARDS_TEXT } from '../../../../constants/decarbonisation-standards-text';
 
 @Component({
   selector: 'app-decarbonisation-standards-component',
