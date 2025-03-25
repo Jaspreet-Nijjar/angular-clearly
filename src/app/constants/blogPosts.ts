@@ -1,12 +1,4 @@
-interface BlogPosts {
-  image: string;
-  label: string;
-  date: string;
-  title: string;
-  description: string;
-}
-
-export const BLOG_POSTS: BlogPosts[] = [
+export const BLOG_POSTS = [
   {
     image: 'blog1.webp',
     label: 'Fundraising',
