@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ButtonComponent } from '../../../../shared/button/button.component';
 import { RouterModule } from '@angular/router';
-import { SERVICE_CARDS } from '../../../../constants/services.data';
+import {
+  SERVICE_CARDS,
+  SERVICE_FEATURES,
+} from '../../../../constants/services.data';
 
 @Component({
   selector: 'app-services',
@@ -11,4 +14,7 @@ import { SERVICE_CARDS } from '../../../../constants/services.data';
 })
 export class ServicesComponent {
   serviceCards = SERVICE_CARDS;
+  serviceFeatures = SERVICE_FEATURES;
+
+  @Input() color!: string;
 }
