@@ -1,4 +1,16 @@
-export const SERVICE_CARDS = [
+interface ServiceCard {
+  number: number;
+  title: string;
+  description: string;
+}
+
+interface ServiceFeatures {
+  title: string;
+  color: string;
+  description: string;
+}
+
+export const SERVICE_CARDS: ServiceCard[] = [
   {
     number: 1,
     title: 'Understand',
@@ -19,7 +31,7 @@ export const SERVICE_CARDS = [
   },
 ];
 
-export const SERVICE_FEATURES = [
+export const SERVICE_FEATURES: ServiceFeatures[] = [
   {
     title: 'Mobility',
     color: 'text-blue-400',
