@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../../shared/button/button.component';
+
 import {
   FormControl,
   FormGroup,
@@ -9,7 +9,7 @@ import {
 
 @Component({
   selector: 'app-contact',
-  imports: [ButtonComponent, ReactiveFormsModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './contact.component.html',
 })
 export class ContactComponent {
