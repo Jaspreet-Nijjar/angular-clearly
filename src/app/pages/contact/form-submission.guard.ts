@@ -20,10 +20,10 @@ export class FormSubmissionGuard implements CanActivate {
     const formSubmitted = this.formStatusService.getFormSubmitted();
 
     if (formSubmitted) {
-      this.router.navigate(['/success']);
       return true;
-    } else {
-      return false;
     }
+
+    this.router.navigate(['/']);
+    return false;
   }
 }
