@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { Router } from '@angular/router';
 
 import {
   FormControl,
@@ -7,6 +6,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { FormStatusService } from './form-status.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +14,7 @@ import {
   templateUrl: './contact.component.html',
 })
 export class ContactComponent {
-  private router = inject(Router);
+  private formStatusService = inject(FormStatusService);
 
   contactForm = new FormGroup({
     dropdown: new FormControl('', Validators.required),
@@ -32,9 +32,9 @@ export class ContactComponent {
     console.log('submitted');
 
     if (this.contactForm.valid) {
-      this.router.navigate(['/success']);
+      this.formStatusService.setFormSubmitted(true);
     } else {
-      return;
+      this.formStatusService.setFormSubmitted(false);
     }
   }
 }
