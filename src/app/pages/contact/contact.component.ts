@@ -31,8 +31,6 @@ export class ContactComponent {
   });
 
   onSubmit() {
-    console.log('submitted');
-
     if (this.contactForm.valid) {
       this.formStatusService.setFormSubmitted(true);
       this.router.navigate(['/success']);
