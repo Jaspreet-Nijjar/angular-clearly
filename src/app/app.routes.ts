@@ -5,6 +5,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { RootLayoutComponent } from './layouts/root-layout/root-layout.component';
+import { SuccessComponent } from './pages/success/success.component';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,7 @@ export const routes: Routes = [
       { path: 'blog', component: BlogComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'products', component: ProductsComponent },
+      { path: 'success', component: SuccessComponent },
     ],
   },
   {
